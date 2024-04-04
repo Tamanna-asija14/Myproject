@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="jquery-ui.css"></script>
+    <script src="jquery-ui.js"></script>
+    <script> 
+      $(document).ready(function(){
+
+   $("#b1").click(function(){
+     $("#id1").hide();
+   });
+
+   $("#b2").click(function(){
+     $("#id1").show();
+   });
+
+   $("#b3").click(function(){
+     $("#id1").toggle();
+   });
+   $("#b4").click(function(){
+     $("#id1").animate({left:'500px'});
+   });
+   $("#b5").click(function(){
+     $("#id1").css("color", "red")
+      .slideUp(2000)
+      .slideDown(2000);
+   });
+
+
+      }
+      )
+    </script>
+    <style>
+        #id1{
+            height: 300px;
+            width: 500px;
+            background-color: aquamarine;
+            border: solid;
+            position: relative;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="id1"></div><br>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+    <button id="b3">Toggle</button>
+    <button id="b4">Animation</button>
+    <button id="b5">Chaning</button>
+    
+</body>
+</html>
+
+
+
+
